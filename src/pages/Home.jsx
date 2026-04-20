@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { personal, researchInterests, skills } from "../data";
 import useReveal from "../hooks/useReveal";
+import profileImg from "../assets/profile.jpg";
 import "./Home.css";
 
 export default function Home() {
@@ -38,7 +39,7 @@ export default function Home() {
             <div className="profile-corner bl" />
             <div className="profile-corner br" />
             <div className="profile-img-wrap">
-              <img src="profile.jpg" alt="Your Name" className="profile-img" />
+              <img src={profileImg} alt={personal.name} className="profile-img" />
             </div>
           </div>
         </div>
